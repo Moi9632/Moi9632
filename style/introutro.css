@@ -1,0 +1,29 @@
+@import "./components/_menu.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*défilement horizontal*/
+body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/*gestion taille main de la préface et de l'épilogue*/
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: max-content;
+}
+img {
+    width: auto;
+    height: 97.5vh;
+}
+
+/**/
+#preface:first-child, #epilogue:first-child {
+    margin-left: 19vw;
+}

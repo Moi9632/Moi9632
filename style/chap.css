@@ -1,0 +1,208 @@
+@import "./components/_menu.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*défilement horizontal*/
+body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: max-content; /*attention taille main des 5 chapitres*/
+}
+img {
+    width: auto;
+    height: 98vh;
+}
+
+
+/*-----------------*/
+/*gestion des liens*/
+/*-----------------*/
+.section>div {
+    z-index: 100;
+}
+.section>div>a {
+    display: inline-block;
+    z-index: 100;
+}
+
+/*--------------*/
+/*gestion chap 1*/
+/*--------------*/
+#chapun:first-child {
+    margin-left: 18vw;
+}
+#chapun>div {
+    position: absolute;
+    top: 23vh;
+    left: 156vw;
+    width: 31vh;
+    height: 18vw;
+}
+#chapun>div>a {
+    width: 31vh;
+    height: 18vw;
+}
+#chapun>div:nth-of-type(2) {
+    position: absolute;
+    top: 19vh;
+    left: 256vw;
+    width: 17vw;
+    height: 42vh;
+}
+#chapun>div:nth-of-type(2)>a {
+    width: 17vw;
+    height: 42vh;
+}
+#chapun>div:nth-of-type(3) {
+    position: absolute;
+    top: 25vh;
+    left: 332vw;
+    width: 17vw;
+    height: 50vh;
+}
+#chapun>div:nth-of-type(3)>a {
+    width: 17vw;
+    height: 50vh;
+}
+#chapun>div:nth-of-type(4) {
+    position: absolute;
+    top: 24vh;
+    left: 408vw;
+    width: 28vw;
+    height: 25vh;
+}
+#chapun>div:nth-of-type(4)>a {
+    width: 25vw;
+    height: 28vh;
+}
+
+/*--------------*/
+/*gestion chap 2*/
+/*--------------*/
+#chapdeux:first-child {
+    margin-left: 18vw;
+}
+#chapdeux>div {
+    position: absolute;
+    top: 5vh;
+    left: 87vw;
+    width: 26vw;
+    height: 31vh;
+}
+#chapdeux>div>a {
+    width: 26vw;
+    height: 31vh;
+}
+#chapdeux>div:nth-of-type(2) {
+    position: absolute;
+    top: 37vh;
+    left: 98vw;
+    width: 15vw;
+    height: 31vh;
+}
+#chapdeux>div:nth-of-type(2)>a {
+    width: 15vw;
+    height: 31vh;
+}
+#chapdeux>div:nth-of-type(3) {
+    position: absolute;
+    top: 7vh;
+    left: 161vw;
+    width: 18vw;
+    height: 50vh;
+}
+#chapdeux>div:nth-of-type(3)>a {
+    width: 18vw;
+    height: 50vh;
+}
+#chapdeux>div:nth-of-type(4) {
+    position: absolute;
+    top: 60vh;
+    left: 185vw;
+    width: 20vw;
+    height: 25vh;
+}
+#chapdeux>div:nth-of-type(4)>a {
+    width: 20vw;
+    height: 25vh;
+}
+#chapdeux>div:nth-of-type(5) {
+    position: absolute;
+    top: 5vh;
+    left: 282vw;
+    width: 20vw;
+    height: 25vh;
+}
+#chapdeux>div:nth-of-type(5)>a {
+    width: 20vw;
+    height: 25vh;
+}
+#chapdeux>div:nth-of-type(6) {
+    position: absolute;
+    top: 30vh;
+    left: 293vw;
+    width: 15vw;
+    height: 43vh;
+}
+#chapdeux>div:nth-of-type(6)>a {
+    width: 15vw;
+    height: 43vh;
+}
+
+/*--------------*/
+/*gestion chap 3*/
+/*--------------*/
+#chaptrois:first-child {
+    margin-left: 18vw;
+}
+#chaptrois > img {
+    margin-right: 2vw;
+}
+#chaptrois>div {
+    position: absolute;
+    top: 25vh;
+    left: 164vw;
+    width: 20vw;
+    height: 31vh;
+}
+#chaptrois>div>a {
+    width: 20vw;
+    height: 31vh;
+}
+
+/*--------------*/
+/*gestion chap 4*/
+/*--------------*/
+#chapquatre:first-child {
+    margin-left: 18vw;
+}
+#chapquatre > img {
+    margin-right: 2vw;
+}
+#chapquatre>div {
+    position: absolute;
+    top: 16vh;
+    left: 255vw;
+    width: 15vw;
+    height: 40vh;
+}
+#chapquatre>div>a {
+    width: 15vw;
+    height: 40vh;
+}
+
+/*--------------*/
+/*gestion chap 5*/
+/*--------------*/
+#chapcinq:first-child {
+    margin-left: 19vw;
+}

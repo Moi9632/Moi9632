@@ -1,0 +1,78 @@
+@import "./components/_menu.css";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*défilement horizontal*/
+body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/*gestion taille main de la home page index.html*/
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 400vw; /*ajuster selon la page, ici home 50vw par section*/
+}
+
+/*gestion des tailles*/
+#section_one, #section_two, #section_three, #section_four, #section_five, #section_six, 
+#section_seven, #section_eight {
+    width: 50vw;
+    height: 100vh;
+}
+.section>img {
+    width: 100%;
+    height: 99vh;
+}
+
+/*gestion des liens*/
+.section>div {
+    z-index: 100;
+    height: 55vh;
+    width: 20vw;
+}
+.section>div>a {
+    display: inline-block;
+    height: 55vh;
+    width: 20vw;
+}
+#section_two>div {
+    position: absolute;
+    top: 25vh;
+    left: 55vw;
+}
+#section_three>div {
+    position: absolute;
+    top: 15vh;
+    left: 113.5vw;
+}
+#section_four>div {
+    position: absolute;
+    top: 20vh;
+    left: 162vw;
+}
+#section_five>div {
+    position: absolute;
+    top: 13.5vh;
+    left: 214vw;
+}
+#section_six>div {
+    position: absolute;
+    top: 28vh;
+    left: 269.5vw;
+}
+#section_seven>div {
+    position: absolute;
+    top: 12vh;
+    left: 320vw;
+}
+#section_eight>div {
+    position: absolute;
+    top: 30vh;
+    left: 355vw;
+}
