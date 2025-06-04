@@ -1,0 +1,151 @@
+/* ##################
+Génération des slides
+#################### */
+/* scroll-snap : faire des slides sur la page d'acceuil */
+html {
+  font-family: sans-serif;
+  scroll-snap-type: y mandatory;
+}
+
+/* section : style de chaque slide */
+section {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+
+/* ###############
+Images de la page
+################ */
+.imageLogo {
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* cursor: pointer; */
+}
+
+.imageErable {
+    width: 50%;
+    height: 70%;
+    position:absolute;
+    bottom:0px;
+    left: 0px;
+}
+
+/* #########
+Fil d'Ariane
+########### */
+.filArianeVertical {
+    z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 300px;
+  right: 60px;
+  gap: 100px;
+}
+
+.etape {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.etape::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 80px;
+  background-color: gray;
+  margin-top: 10px;
+}
+
+.etape:last-child::after {
+  display: none;
+}
+
+.etape.active {
+  background-color: orangered;
+}
+
+/* #######################
+Commun à toutes les slides
+######################### */
+.textSlide {
+    position: relative;
+    top: 35%;
+    left: 55%;
+    font-size: 50px;
+}
+
+/* ###########
+Première slide
+############# */
+#slide1 {
+    background-color: palegoldenrod;
+}
+
+#titre1 {
+    color : orangered;
+    font-weight: bold;
+}
+
+#bouton1 {
+    background-color: orangered;
+    color: white;
+    border: 0px;
+    height: 50px;
+    width: 180px;
+    font-size: 25px;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+#bouton1:hover {
+    box-shadow: inset 0 100px 0 0 orange;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    right : 20px;
+}
+
+/* ###########
+Deuxième slide
+############# */
+#slide2 {
+    background-color: rosybrown;
+}
+
+/* ############
+Troisième slide
+############## */
+#slide3 {
+    background-color: cyan;
+}
+
+/* ############
+Quatrième slide
+############## */
+#slide4 {
+    background-color: darkslategrey;
+}
+
