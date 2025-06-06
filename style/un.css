@@ -97,11 +97,11 @@ header {
   justify-content: space-between;
 }
 header>a>img {
-  height: 5vh;
-  padding: 0vh 3vw;
+  height: 7vh;
+  margin: 0vh 3vw;
 }
 nav>a {
   color: var(--rouge);
   text-decoration: none;
-  padding: 0vh 3vw;
+  margin: 0vh 3vw;
 }
