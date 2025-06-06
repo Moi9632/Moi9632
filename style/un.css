@@ -96,7 +96,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header>a {
+header>a>img {
   height: 5vh;
   padding: 0vh 3vw;
 }
