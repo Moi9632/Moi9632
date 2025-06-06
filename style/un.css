@@ -90,7 +90,7 @@ header {
   position: fixed;
   background-color: var(--beige);
   height: 4em;
-  width: 100vw;
+  width: 99vw;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -109,7 +109,7 @@ nav>a {
 /*entête : titre et photo*/
 .entete {
   height: 110vh;
-  width: 100vw;
+  width: 99vw;
   background-color: var(--beige);
   display: flex;
   flex-direction: column;
@@ -122,6 +122,6 @@ nav>a {
   top: 350px;
 }
 .entete>img {
-  width: 100vw;
+  width: 99vw;
   z-index: 10;
 }
