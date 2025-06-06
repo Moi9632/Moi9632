@@ -125,3 +125,21 @@ nav>a {
   width: 99vw;
   z-index: 10;
 }
+
+/*gestion chemin fond*/
+.taille-page {
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+}
+.track {
+  width: 1200px;
+  align-self: center;
+  position: relative;
+  /*top: -110vhpx;*/
+}
+.contenu {
+  width: 1200px;
+  align-self: center;
+  z-index: 10;
+}
