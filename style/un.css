@@ -105,3 +105,23 @@ nav>a {
   text-decoration: none;
   margin: 0vh 3vw;
 }
+
+/*entête : titre et photo*/
+.entete {
+  height: 110vh;
+  width: 100vw;
+  background-color: var(--beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.entete>div {
+  align-self: center;
+  position: relative;
+  width: 42vw;
+  top: 350px;
+}
+.entete>img {
+  width: 100vw;
+  z-index: 10;
+}
