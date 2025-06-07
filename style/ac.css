@@ -1,0 +1,36 @@
+@import "./components/_font.css";
+
+/*on remet tout à 0*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*variables de couleur*/
+:root {
+  --vert: #0E4D38;
+  --rose: #F9B3BD;
+}
+
+/*gestion bar de nav*/
+header {
+  position: fixed;
+  z-index: 100;
+  background-color: var(--vert);
+  height: 4em;
+  width: 99vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header>a>img {
+  height: 7vh;
+  margin: 0vh 3vw;
+}
+nav>a {
+  color: var(--rose);
+  text-decoration: none;
+  margin: 0vh 3vw;
+}
