@@ -234,19 +234,145 @@ span:hover, span.rempli {
   flex-flow: column wrap;
   height: 400px;
   width: 400px;
-  gap: 10px;
+  gap: 20px;
   justify-content: flex-start;
   align-content: center;
 }
 #draw-galerie>img {
   width: 140px;
-  height: auto
+  height: auto;
+  position: relative;
+}
+#draw-galerie>img:nth-of-type(2) {
+  top: -50px;
+  left: 80px;
+  z-index: 5;
+}
+#draw-galerie>img:nth-of-type(3) {
+  top: -50px;
+  z-index: 4;
+}
+#draw-galerie>img:nth-of-type(4) {
+  top: -90px;
+  left: 110px;
+}
+#draw-galerie>img:nth-of-type(5) {
+  width: 90px;
+  height: auto;
+  top: -70px;
+  left: 40px;
 }
 .dessin {
   display: flex;
   flex-flow: row nowrap;
   margin-top: 172px;
-  margin-left: 160px;
+  margin-left: 30px;
   justify-content: center;
-  gap: 125px;
 }
+
+/*montage*/
+.montage {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.montage>img {
+  width: 450px;
+  height: auto;
+  position: relative;
+  top: -120px;
+  right: 40px;
+  transform: rotate(15deg);
+}
+#montage-texte {
+  width: 550px;
+  margin-top: 20px;
+  margin-right: 160px;
+}
+#montage-texte>p {
+  margin-top: 10px;
+}
+#montage-texte>p>em, #montage>p:nth-of-type(2) {
+  color: var(--rouge);
+}
+#videos {
+  margin-top: 25px;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 85px;
+  justify-content: center;
+}
+
+/*stephen ref*/
+#stephen {
+  width: 150px;
+  position: relative;
+  transform: rotate(35deg);
+  top: -50px;
+  left: 50px;
+}
+
+/*arts p*/
+#feuilles-arts {
+  width: 150px;
+  position: relative;
+  left: 850px;
+  top: 50px;
+  z-index: 5;
+  transform: rotate(70deg);
+}
+#arts-texte {
+  width: 400px;
+  margin-top: 20px;
+  margin-right: 160px;
+}
+#arts-texte>p {
+  margin-top: 10px;
+}
+#arts-texte>p>em, #arts>p:nth-of-type(2) {
+  color: var(--rouge);
+}
+.arts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+}
+#arts-galerie {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#arts-galerie>img {
+  width: 400px;
+  position: relative;
+  top: -50px;
+}
+#arts-galerie>img:nth-of-type(2) {
+  height: 175px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/*conclu*/
+.conclu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 70px;
+  margin-right: 80px;
+}
+.conclu>div:first-child {
+  color: var(--rouge);
+}
+.txt-indent {
+  text-indent: 235px;
+}
+
+/*citation*/
+#citation {
+  width: 600px;
+}
+
+/*bouton*/
