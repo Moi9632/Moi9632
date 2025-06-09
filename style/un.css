@@ -1,16 +1,16 @@
 @import "./components/_font.css";
 
-/*variables de couleur*/
-:root {
-  --beige: #EDEADC;
-  --rouge: #D5561D;
-}
-
 /*on remet tout à 0*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/*variables de couleur*/
+:root {
+  --beige: #EDEADC;
+  --rouge: #D5561D;
 }
 
 /*gestion bar de nav*/
@@ -65,10 +65,188 @@ nav>a {
   width: 1200px;
   align-self: center;
   position: relative;
-  /*top: -110vhpx;*/
+  top: 18vh;
 }
 .contenu {
   width: 1200px;
   align-self: center;
   z-index: 10;
+  position: relative;
+  top: -485vh;
+}
+
+/*texte intro*/
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.intro>div:first-child {
+  color: var(--rouge);
+}
+.txt-indent {
+  text-indent: 200px;
+}
+.intro>div:nth-of-type(2) {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 60px;
+  margin-left: 225px;
+  margin-top: 30px;
+}
+.intro>img {
+  width: 175px;
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+
+/*poterie*/
+#pot-texte>p {
+  margin-top: 10px;
+}
+#pot-texte>p>em, #pot-texte>p:nth-of-type(2) {
+  color: var(--rouge);
+}
+#pot-texte>p:nth-of-type(3) {
+  width: 450px;
+}
+#pot-texte {
+  width: 450px;
+}
+#pot-galerie {
+  display: flex;
+  flex-flow: column wrap;
+  height: 400px;
+  width: 400px;
+  gap: 10px;
+  justify-content: flex-start;
+  align-content: center;
+}
+#pot-galerie>img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+#pot-galerie>img:nth-of-type(1), #pot-galerie>img:nth-of-type(2) {
+  position: relative;
+  top: 40px;
+}
+.poterie {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 200px;
+  justify-content: center;
+  gap: 125px;
+}
+
+/*nasa ref*/
+#nasa {
+  width: 200px;
+  position: relative;
+  left: 960px;
+  top: -85px;
+}
+
+/*peinture*/
+#paint-texte {
+  width: 460px;
+}
+#paint-texte>p {
+  margin-top: 10px;
+}
+#paint-texte>p:nth-of-type(1), #paint-texte>p:nth-of-type(3) {
+  color: white;
+}
+#paint-texte>p>em, #paint-texte>p:nth-of-type(2) {
+  color: var(--beige);
+}
+#carrousel {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr auto;
+  margin-left: 80px;
+  width: 400px;
+  height: 300px;
+  /*position: relative; /*permet la superposiion*/
+  align-items: center; /*centrer les éléments selon la main axis*/
+  justify-items: center; /*centrer les éléments selon le cross-axis*/
+}
+#carrousel>img {
+  display: none;
+  height: 220px;
+  width: auto;
+  grid-column: 2;
+  grid-row: 1;
+}
+#carrousel>p {
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  font-size: 30px; 
+}
+#carrousel>p:first-of-type {
+  grid-column: 1;
+  grid-row: 1;
+}
+#carrousel>p:nth-of-type(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+#carrousel>div{
+  text-align: center;
+  letter-spacing: 5px; /*espace entre les 3 cercles*/
+  grid-column: 2;
+  grid-row: 2;
+}
+span {
+  display: inline-block; /*afin de les placer en ligne mais avoir pp de taille*/
+  border-radius: 100%; /*tracer un cercle*/
+  background-color: rgb(221, 221, 221);
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+span:hover, span.rempli {
+  background-color: black;
+}
+#carrousel>img.dessus {
+  display: block;
+}
+.peinture {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 125px;
+}
+
+/*dessin*/
+#draw-texte>p {
+  margin-top: 10px;
+}
+#draw-texte>p>em, #draw-texte>p:nth-of-type(2) {
+  color: var(--rouge);
+}
+#draw-texte {
+  width: 350px;
+}
+#draw-galerie {
+  display: flex;
+  flex-flow: column wrap;
+  height: 400px;
+  width: 400px;
+  gap: 10px;
+  justify-content: flex-start;
+  align-content: center;
+}
+#draw-galerie>img {
+  width: 140px;
+  height: auto
+}
+.dessin {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 172px;
+  margin-left: 160px;
+  justify-content: center;
+  gap: 125px;
 }
