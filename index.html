@@ -8,10 +8,10 @@
     <meta name="author" content="Camille Richard">
     <meta name="keywords" content="portfolio, Camille Richard, IUT, Dijon, MMI">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="shortcut icon" href="./medias/icons/plume.png">
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js" defer></script>-->
-    <title>Camille Richard</title>
+    <link rel="shortcut icon" href="./medias/global/favicon.png">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./script/scriptAriane.js"></script>
+    <title>Portfolio Camille Richard</title>
 </head>
 
 
@@ -20,17 +20,58 @@
     <header></header>
 
 
-    <main>
-         <h1>Test</h1>
-        <li><a href="./html/un.html">Acte 1</a></li>
-        <li><a href="./html/deux.html">Acte 2</a></li>
-        <li><a href="./html/trois.html">Acte 3</a></li>
-        <li><a href="./html/quatre.html">Acte 4</a></li>
-        <li><a href="./html/ac.html">Compétences</a></li>
-        <li><a href="./html/mentions.html">Mentions</a></li>
-        <li><a href="./html/ref.html">Ref</a></li>
-    </main>
+    <div class="container">
 
+    <nav class="filArianeVertical">
+        <a href="#slide1" class="etape" data-slide="slide1"></a>
+        <a href="#slide2" class="etape" data-slide="slide2"></a>
+        <a href="#slide3" class="etape" data-slide="slide3"></a>
+        <a href="#slide4" class="etape" data-slide="slide4"></a>
+    </nav>
+
+
+    <section class="slide" id="slide1">
+        <a href="./index.html"><img class="imageLogo" src="./medias/global/Logo_noir.png" alt="Image du logo"></a>
+        <img class="imageErable" src="./medias/global/erableRogne.png" alt="Image érable">
+        <p class="textSlide">Acte 1
+            <br><br>
+            <span class="titreSlide" id="titre1">Éxposition et équations</span>
+            <br><br>
+            <a href="./html/un.html" id="bouton1">Découvrir ></a>
+        </p>
+        <footer>2025 - Fait avec ♥️ par Camille & Valentin - <a href="./html/mentions.html">Mentions légales</a></footer>
+    </section>
+
+
+    <section class="slide" id="slide2">
+        <p class="textSlide">Acte 2
+            <br><br>
+            <span class="titreSlide" id="titre2">Premiers pas en MMI</span>
+            <br><br>
+            <a href="./html/deux.html" id="bouton2">Découvrir ></a>
+        </p>
+    </section>
+
+
+    <section class="slide" id="slide3">
+            <p class="textSlide">Acte 3
+            <br><br>
+            <span class="titreSlide" id="titre3">Colruyt : une alternance riche</span>
+            <br><br>
+            <a href="./html/trois.html" id="bouton3">Découvrir ></a>
+        </p>
+    </section>
+
+
+    <section class="slide" id="slide4">
+        <p class="textSlide">Acte 4
+        <br><br>
+        <span class="titreSlide" id="titre4">Résolution et Céline Dion</span>
+        <br><br>
+        <a href="./html/quatre.html" id="bouton4">Découvrir ></a>
+        </p>
+    </section>
+    </div>
 
 </body>
 </html>
