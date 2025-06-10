@@ -1,3 +1,24 @@
+@import "./components/_font.css";
+
+/*on remet tout à 0*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*variables de couleur*/
+:root {
+  --un-beige: #EDEADC;
+  --un-rouge: #D5561D;
+  --deux-rose: #FEC9CE;
+  --deux-rouge: #CE3C2F;
+  --trois-bleu: #52B4CB;
+  --trois-jaune: #FFD642;
+  --quatre-vert: #0E4D38;
+  --quatre-rose: #F9B3BD;
+}
+
 /* ##################
 Génération des slides
 #################### */
@@ -5,6 +26,7 @@ Génération des slides
 html {
   font-family: sans-serif;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 /* section : style de chaque slide */
@@ -20,34 +42,40 @@ section {
 Images de la page
 ################ */
 .imageLogo {
-  width: 200px;
-  height: 90px;
+  height: 7vh;
+  margin: 0vh 3vw;
   position: absolute;
-  top: 20px;
-  left: 20px;
-  /* cursor: pointer; */
 }
 
 .imageErable {
-    width: 50%;
-    height: 70%;
-    position:absolute;
-    bottom:0px;
-    left: 0px;
+  height: 80vh;
+  width: auto;
+  position:fixed;
+  bottom:0px;
+  left: -5vw;
+  z-index: 100;
 }
 
 /* #########
 Fil d'Ariane
 ########### */
+.container-ariane {
+  z-index: 1000;
+  position: fixed;
+  height: 99vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: right;
+  align-items: center;
+}
 .filArianeVertical {
-    z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: fixed;
-  top: 300px;
-  right: 60px;
   gap: 100px;
+  margin-right: 2vw;
 }
 
 .etape {
@@ -76,76 +104,139 @@ Fil d'Ariane
   display: none;
 }
 
-.etape.active {
-  background-color: orangered;
+.etape.active-slide1 {
+  background-color: var(--un-rouge);
 }
+.etape.active-slide2 {
+  background-color: var(--deux-rouge);
+}
+.etape.active-slide3 {
+  background-color: var(--trois-jaune);
+}
+.etape.active-slide4 {
+  background-color: var(--quatre-rose);
+}
+
+
+/* ####
+Footer
+##### */
+footer>a {
+  color: black;
+}
+footer {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right : 20px;
+}
+
 
 /* #######################
 Commun à toutes les slides
 ######################### */
 .textSlide {
-    position: relative;
-    top: 35%;
-    left: 55%;
-    font-size: 50px;
+  position: relative;
+  top: 30%;
+  left: 57%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+}
+.textSlide>p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 35px;
+}
+.textSlide>a {
+  margin-top: 60px;
+  text-decoration: none;
 }
 
 /* ###########
 Première slide
 ############# */
 #slide1 {
-    background-color: palegoldenrod;
+  background-color: var(--un-beige);
 }
-
-#titre1 {
-    color : orangered;
-    font-weight: bold;
-}
-
 #bouton1 {
-    background-color: orangered;
-    color: white;
-    border: 0px;
-    height: 50px;
-    width: 180px;
-    font-size: 25px;
-    border-radius: 25px 25px 25px 25px;
-    cursor: pointer;
-
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+  width: fit-content;
+  background-color: var(--un-rouge);
+  color: var(--un-beige);
+  border-radius: 25px 25px 25px 25px;
+  padding: 7px 17px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
-
 #bouton1:hover {
-    box-shadow: inset 0 100px 0 0 orange;
+  box-shadow: inset 0 100px 0 0 #A1451C;
 }
 
-
-footer {
-    position: absolute;
-    bottom: 20px;
-    right : 20px;
-}
 
 /* ###########
 Deuxième slide
 ############# */
 #slide2 {
-    background-color: rosybrown;
+  background-color: var(--deux-rose);
 }
+#bouton2 {
+  width: fit-content;
+  background-color: var(--deux-rouge);
+  color: var(--deux-rose);
+  border-radius: 25px 25px 25px 25px;
+  padding: 7px 17px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+#bouton2:hover {
+  box-shadow: inset 0 100px 0 0 #992C23;
+}
+
 
 /* ############
 Troisième slide
 ############## */
 #slide3 {
-    background-color: cyan;
+  background-color: var(--trois-bleu);
 }
+#slide3>div>p, #slide4>div>p {
+  color: white;
+}
+#bouton3 {
+  width: fit-content;
+  background-color: var(--trois-jaune);
+  color: var(--trois-bleu);
+  border-radius: 25px 25px 25px 25px;
+  padding: 7px 17px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+#bouton3:hover {
+  box-shadow: inset 0 100px 0 0 #FFF4CD;
+}
+
 
 /* ############
 Quatrième slide
 ############## */
 #slide4 {
-    background-color: darkslategrey;
+  background-color: var(--quatre-vert);
 }
-
+#bouton4 {
+  width: fit-content;
+  background-color: var(--quatre-rose);
+  color: var(--quatre-vert);
+  border-radius: 25px 25px 25px 25px;
+  padding: 7px 17px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+#bouton4:hover {
+  box-shadow: inset 0 100px 0 0 #FEE7EA;
+}
