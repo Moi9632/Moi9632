@@ -1,10 +1,10 @@
-@import "./components/_font.css";
+@import "../style/components/_font.css";
 
 /*on remet tout à 0*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*variables de couleur*/
@@ -43,6 +43,7 @@ nav>a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: absolute;
 }
 .entete>div {
   align-self: center;
@@ -64,15 +65,15 @@ nav>a {
 .track {
   width: 1200px;
   align-self: center;
-  position: relative;
-  top: 18vh;
+  position: absolute;
+  top: 122vh;
 }
 .contenu {
   width: 1200px;
   align-self: center;
   z-index: 10;
   position: relative;
-  top: -485vh;
+  top: 115vh;
 }
 
 /*texte intro*/
@@ -374,5 +375,3 @@ span:hover, span.rempli {
 #citation {
   width: 600px;
 }
-
-/*bouton*/
