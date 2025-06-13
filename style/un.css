@@ -470,6 +470,7 @@ span:hover, span.rempli {
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
   text-decoration: none;
+  filter: drop-shadow(0.5px 0.5px 4px rgb(116, 116, 116));
 }
 #bouton:hover {
   box-shadow: inset 0 100px 0 0 #A1451C;
