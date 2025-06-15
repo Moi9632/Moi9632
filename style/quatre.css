@@ -1,4 +1,78 @@
 @import "./components/_font.css";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*définition de classes pour le texte (attention couleur à adapter)*/
+/*tags en 15*/
+.font-tags {
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+/*AC et outils et dates en 15*/
+.font-italic-15 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+/*titres projets bold 35 px*/
+.font-title-projet {
+  font-family: "Urbanist", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+/*texte entête 20px regular*/
+.font-txt-entete-20 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+/*texte entête 35 px regular*/
+.font-txt-entete-35 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+/*texte entête 35 px semibold italic*/
+.font-txt-entete-35-sb {
+  font-family: "Urbanist", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+/*texte projets regular 18*/
+.font-txt-18 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+/*boutons semibold 20*/
+.font-bouton {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+/*header + footer 20 medium*/
+.font-header-footer {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+/*citations 20 italic regular*/
+.font-quote {
+  font-family: "Urbanist", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
 
 /*on remet tout à 0*/
 * {
@@ -33,4 +107,272 @@ nav>a {
   color: var(--rose);
   text-decoration: none;
   margin: 0vh 3vw;
+}
+
+/*entête : titre et photo*/
+.entete {
+  height: 110vh;
+  width: 99vw;
+  background-color: var(--vert);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: absolute;
+}
+.entete>div {
+  align-self: flex-start;
+  position: relative;
+  width: 21vw;
+  right: 20vw;
+  top: 35vh;
+}
+.entete>img {
+  height: 99vh;
+  width: auto;
+  z-index: 10;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+/*gestion chemin fond*/
+.taille-page {
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+}
+.track {
+  width: 1200px;
+  align-self: center;
+  position: absolute;
+  top: 138vh;
+}
+.contenu {
+  width: 1200px;
+  height: fit-content;
+  align-self: center;
+  z-index: 10;
+  position: relative;
+  top: 120vh;
+}
+
+/*texte intro*/
+.intro {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-left: 100px;
+}
+.intro>div {
+  align-self: center;
+  color: var(--vert);
+}
+.txt-indent {
+  text-indent: 300px;
+}
+.intro>p {
+  gap: 60px;
+  margin-top: 30px;
+  margin-right: 355px;
+  width: 550px;
+}
+.intro>img {
+  width: 175px;
+  position: absolute;
+  top: 180px;
+  right: 0px;
+  transform: scaleX(-1) rotate(-10deg);
+}
+
+/*plan technique*/
+.technique {
+  display: flex;
+  flex-flow: column nowrap;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 205px;
+  left: 650px;
+}
+#technique-texte {
+  width: 525px;
+}
+#technique-texte>p {
+  margin-top: 20px;
+}
+#technique-texte>p:first-of-type {
+  color: var(--vert);
+  margin-bottom: 10px;
+}
+#bouton-ac {
+  width: fit-content;
+  background-color: var(--vert);
+  color: var(--rose);
+  border-radius: 25px 25px 25px 25px;
+  padding: 7px 17px;
+  margin-top: 20px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  text-decoration: none;
+  filter: drop-shadow(0.5px 0.5px 4px rgb(116, 116, 116));
+}
+#bouton-ac:hover {
+  box-shadow: inset 0 100px 0 0 #061912;
+}
+#bouton-ac>svg {
+  margin-left: 4px;
+}
+
+/*boîte à outils*/
+.outils br:first-of-type {
+  margin-bottom: 7px;
+}
+.outils br {
+  margin-top: 2px;
+}
+#outils-col2>p:nth-of-type(2){
+  margin-top: 30px;
+}
+.outils>p {
+  color: var(--vert);
+}
+.outils {
+  width: 400px;
+  background-color: var(--rose);
+  padding: 50px;
+  height: fit-content;
+  position: relative;
+  left: 110px;
+  bottom: 75px;
+}
+#outils-container {
+  margin-top: 25px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 185px;
+}
+
+/*plan humain*/
+#humain-img {
+  width: 185px;
+  transform: rotate(-20deg);
+  position: relative;
+  top: 25px;
+  left: 50px;
+}
+.humain {
+  width: 635px;
+  position: relative;
+  top: -173px;
+  left: 410px;
+}
+.humain>p {
+  margin-top: 20px;
+}
+.humain>p:first-of-type {
+  color: var(--vert);
+  margin-bottom: 10px;
+}
+
+/*canada*/
+.canada {
+  position: relative;
+  top: 12px;
+  left: 90px;
+}
+.canada>p {
+  color: var(--vert);
+  margin-bottom: 15px;
+}
+.canada>div>p {
+  margin-top: 22px;
+}
+#canada-texte>p {
+  width: 520px;
+}
+#canada-texte>p:nth-of-type(2) {
+  margin-left: 325px;
+}
+#canada-texte>p:nth-of-type(3) {
+  margin-left: 575px;
+}
+#canada-galerie {
+  position: relative;
+  top: -185px;
+  right: 210px;
+}
+#canada-galerie>img:nth-of-type(1) {
+  height: 160px;
+  position: relative;
+  z-index: 10;
+  filter: drop-shadow(0.5px 0.5px 6px rgb(116, 116, 116));
+  bottom: 60px;
+  left: 300px;
+}
+#canada-galerie>img:nth-of-type(2) {
+  width: 175px;
+  position: relative;
+}
+#canada-galerie>img:nth-of-type(3) {
+  width: 190px;
+  position: relative;
+  z-index: 10;
+  filter: drop-shadow(0.5px 0.5px 6px rgb(116, 116, 116));
+  top: 90px;
+  right: 70px;
+}
+
+/*conclu*/
+#fin {
+  width: 420px;
+  position: relative;
+  top: 110px;
+  left: 465px;
+}
+#branche {
+  width: 400px;
+  transform: scaleX(-1);
+  position: relative;
+  top: 75px;
+  left: 960px;
+}
+
+/*citation*/
+#citation {
+  width: 490px;
+  position: relative;
+  top: 42px;
+  left: 225px;
+  text-align: right;
+}
+
+/*footer*/
+footer {
+  position: absolute;
+  top: 520vh;
+  background-color: black;
+  color: white;
+  width: 99vw;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+footer>p {
+  align-self: center;
+}
+footer>p>a {
+  color: white;
+}
+footer>p:first-of-type {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+footer>p:nth-of-type(3) {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+footer>p:nth-of-type(4) {
+  margin-bottom: 30px;
 }
