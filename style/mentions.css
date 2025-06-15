@@ -34,3 +34,75 @@ nav>a {
   text-decoration: none;
   margin: 0vh 3vw;
 }
+
+/*fond*/
+main {
+  background-color: var(--beige);
+  height: 130vh;
+}
+
+/*arbre*/
+#erable {
+  height: 115vh;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 15vh;
+  right: 0;
+}
+
+/*titre*/
+#titre {
+  width: 29vw;
+  margin-bottom: 13vh;
+}
+
+/*texte*/
+.contenu {
+  position: relative;
+  top: 30vh;
+  left: 14vw;
+}
+em {
+  font-weight: 700;
+  font-style: normal;
+}
+.texte {
+  margin: 40px 0px;
+  width: 400px;
+}
+#deux {
+  width: 800px;
+}
+.texte>p {
+  margin: 5px 0px;
+}
+br {
+  margin: 2px 0px;
+}
+
+/*footer*/
+footer {
+  position: absolute;
+  top: 130vh;
+  background-color: black;
+  color: white;
+  width: 99vw;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+footer>p {
+  align-self: center;
+}
+footer>p>a {
+  color: white;
+}
+footer>p:first-of-type {
+  width: 400px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+footer>p:nth-of-type(3) {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
